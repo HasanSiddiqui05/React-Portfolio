@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff; /* Optional default */
+  }
+  
+
+@layer utilities {
+.navlink-active-light {
+    @apply relative font-bold text-blue-600 before:absolute before:top-6 before:left-0 before:w-full before:h-1 before:bg-blue-600;
+}
+
+.navlink-active-dark {
+    @apply relative font-bold text-green-600 before:absolute before:top-6 before:left-0 before:w-full before:h-1 before:bg-green-600;
+}
+
+.navlink-hover-light {
+    @apply hover:text-blue-600;
+}
+
+.navlink-hover-dark {
+    @apply hover:text-green-600;
+}
+}
+  
